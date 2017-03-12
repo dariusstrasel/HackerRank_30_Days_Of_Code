@@ -52,11 +52,11 @@ def get_total_cost_of_meal():
     tax_percent = int(input())
 
     # Write your calculation code here
-    tip =  # calculate tip
-    tax =  # caclulate tax
+    tip = meal_cost * (tip_percent / 100)  # calculate tip
+    tax = meal_cost * (tax_percent / 100)  # caclulate tax
 
     # cast the result of the rounding operation to an int and save it as total_cost
-    total_cost = int(round("""write your total cost calculation here"""))
+    total_cost = int(round(meal_cost + tip + tax))
 
     return str(total_cost)
 
