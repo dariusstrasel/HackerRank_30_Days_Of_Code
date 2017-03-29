@@ -37,3 +37,32 @@ Explanation
 :  and  are positive, so power returns the result of =, which is .
 : Both inputs ( and ) are negative, so power throws an exception and  is printed.
 : One of the inputs () is negative, so power throws an exception and  is printed."""
+
+# Write your code here
+import math
+
+
+class Calculator:
+    def __init__(self):
+        pass
+
+    def is_positive_int(self, integerA, integerB):
+        try:
+            if integerA < 0 and integerB < 0 or (integerA < 0 or integerB < 0):
+                raise Exception
+        except Exception:
+            raise ValueError("n and p should be non-negative")
+
+    def power(self, n, p):
+        self.is_positive_int(n, p)
+        return n ** p
+
+myCalculator=Calculator()
+T=int(input())
+for i in range(T):
+    n,p = map(int, input().split())
+    try:
+        ans=myCalculator.power(n,p)
+        print(ans)
+    except Exception as e:
+        print(e)
