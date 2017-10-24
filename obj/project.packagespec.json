@@ -1,0 +1,33 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "/Users/dariusstrasel/GoogleDrive/Programming/github/git/HackerRank_30_Days_Of_Code/ConsoleApplication.csproj",
+    "projectName": "ConsoleApplication",
+    "projectPath": "/Users/dariusstrasel/GoogleDrive/Programming/github/git/HackerRank_30_Days_Of_Code/ConsoleApplication.csproj",
+    "outputPath": "/Users/dariusstrasel/GoogleDrive/Programming/github/git/HackerRank_30_Days_Of_Code/obj/",
+    "projectStyle": "PackageReference",
+    "originalTargetFrameworks": [
+      "netcoreapp2.0"
+    ],
+    "frameworks": {
+      "netcoreapp2.0": {
+        "projectReferences": {}
+      }
+    }
+  },
+  "frameworks": {
+    "netcoreapp2.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "target": "Package",
+          "version": "2.0.0-preview2-25407-01"
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
